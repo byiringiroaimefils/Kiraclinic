@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* color: white; */
+    background-color: rgb(240, 235, 235);
+}
+
+/* Navigation */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.container .nav-bar ul li {
+    display: inline;
+    list-style: none;
+    margin: 0px 20px;
+
+}
+
+.container .nav-bar ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    position: relative;
+}
+
+/* Home */
+.main {
+    background-image: url(images/pexels-evg-kowalievska-1170979.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    flex-direction: column;
+}
+
+.main .message {
+    width: 400px;
+    margin-top: 5px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.main .message input {
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.main .message textarea {
+    width: 350px;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.btn button {
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    position: relative;
+    border: none;
+    color: white;
+}
+
+.btn button:hover {
+    border: 1px solid;
+}
+
+/* welcome words */
+
+
+.welcome-words h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.welcome-words h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+h1 {
+
+    margin-top: 15px;
+    margin-left: 50px;
+    position: relative;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    height: 5px;
+    background-color: dodgerblue;
+}
+
+/* Efffect of Word */
+h2 {
+    margin-top: 15px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    width: 90px;
+    height: 5px;
+    background-color: dodgerblue;
+}
+
+
+
+
+/* account */
+
+.Menu .account {
+    position: fixed;
+    right: 15px;
+    top: 75px;
+    width: 10%;
+    height: 25%;
+    background-color: white;
+    justify-content: space-around;
+    display: none;
+    align-items: center;
+
+}
+
+.account input {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.login {
+    margin-right: 15px;
+}
+
+.login button {
+    padding: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+    background-color: transparent;
+
+}
+
+.login button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+.About {
+    padding-top: 100px;
+}
+
+.laboratory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.laboratory .word {
+    margin-bottom: 400px;
+}
+
+
+/* Parternship */
+
+.parternship .society {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parternship {
+    padding-top: 90px;
+    margin-bottom: 290px;
+
+}
+
+.parternship .Matualisation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 20px #3d3d3d;
+    width: 300px;
+    gap: 50px;
+    padding: 20px;
+    /* height: 300px; */
+    margin: 15px;
+    font-weight: bold;
+
+}
+
+
+
+/* Doctors */
+
+.Doctors {
+    padding-top: 100px;
+}
+
+.ourdoctors {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 20px;
+    position: relative;
+}
+
+
+.ourdoctors h6 {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translate(-80%, -60%);
+    display: none;
+    font-size: 20px;
+
+}
+
+.ourdoctors:hover h6 {
+    display: block;
+
+}
+
+
+/* contact */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 350px;
+}
+
+.Message {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    box-shadow: 0 0 20px #3d3d3d;
+    background-color: white;
+    padding: 10px;
+
+}
+
+.Message input {
+    width: 420px;
+    padding: 10px;
+    outline: none;
+}
+
+.Message textarea {
+    width: 420px;
+}
+
+.Message button {
+    background-color: dodgerblue;
+    border: none;
+    width: 420px;
+    padding:20px;
+    color: white;
+}
+.contact .Photo p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* Footer */
+
+#footer {
+    float: right;
+}
+
+.followus img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 20px;
+    margin: 0px 9px 0px 5px;
+    filter: drop-shadow(0 0 20px #ccc);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .laboratory {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+    }
+
+    .parternship .society {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
+/*  */
